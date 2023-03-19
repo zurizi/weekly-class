@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      /* Descendant combinator */
+      .box p {
+        color: red;
+      }
+
+      /* Child combinator */
+      ul > li {
+        background-color: pink;
+      }
+
+      /* Adjacent sibling combinator */
+      div + p{
+        background-color: green;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box"><p>Text in .box</p></div>
+    <p>Text not in .box</p>
+
+    <ul>
+      <li>Unordered item</li>
+      <li>
+        Unordered item
+        <ol>
+          <li>Item 1</li>
+          <li>Item 2</li>
+        </ol>
+      </li>
+    </ul>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <style>
+      a{
+        color: white;
+        font-size: 30px;
+      }
+      /* 1. specificity: */
+      #outer a {
+        background-color: red;
+      }
+
+      /* 2. specificity:  */
+      #outer #inner a {
+        background-color: blue;
+      }
+
+      /* 4. specificity:  */
+      #outer div ul .nav a {
+        background-color: yellow;
+      }
+
+      /* 5. specificity: */
+      div div li:first-child a {
+        background-color: green;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div id="outer" class="container">
+      <div id="inner" class="container">
+        <ul>
+          <li class="nav"><a href="#">One</a></li>
+          <li class="nav"><a href="#">Two</a></li>
+          <!-- <li class="nav"><a style="background-color: pink;" href="#">Two</a></li> -->
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
