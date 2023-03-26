@@ -8,21 +8,25 @@
         font-size: 30px;
       }
       /* 1. specificity: */
-      #outer a {
-        background-color: red;
+      /* 1-0-1 */
+      #outer a { 
+        background-color: red !important;
       }
 
       /* 2. specificity:  */
+      /* 2-0-1 */
       #outer #inner a {
-        background-color: blue;
+        background-color: blue !important;
       }
 
       /* 4. specificity:  */
+      /* 1-1-3 */
       #outer div ul .nav a {
         background-color: yellow;
       }
 
       /* 5. specificity: */
+      /* 0-1-4 */
       div div li:first-child a {
         background-color: green;
       }
@@ -33,7 +37,8 @@
     <div id="outer" class="container">
       <div id="inner" class="container">
         <ul>
-          <li class="nav"><a href="#">One</a></li>
+          <!-- 1-1-0-0-0 -->
+          <li  class="nav"><a style="background-color: pink;" href="#">One</a></li>
           <li class="nav"><a href="#">Two</a></li>
           <!-- <li class="nav"><a style="background-color: pink;" href="#">Two</a></li> -->
         </ul>
