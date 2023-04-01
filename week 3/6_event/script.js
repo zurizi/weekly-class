@@ -1,5 +1,6 @@
 let tombolRahasia = document.getElementById("tombol-rahasia");
 let rahasia = document.getElementById("judul-rahasia")
+
 tombolRahasia.addEventListener("click", function() {
   // kode yang akan dijalankan saat tombol diklik
     rahasia.removeAttribute("hidden")
@@ -24,9 +25,6 @@ tombolRahasia.addEventListener("mouseout", function() {
     // kode yang akan dijalankan saat kursor diatas button
         let p = document.querySelector("p")
     p.innerText = ""
-
-    
-        
     });
 
 let myImage = document.querySelector("img");

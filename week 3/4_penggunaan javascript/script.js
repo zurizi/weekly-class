@@ -1,4 +1,4 @@
 function myFunction() {
-    alert("Halo dunia!");
+    alert("Halo dunia dari external!");
   }
   

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    li{
+      list-style: none;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+    }
+
+    .complete{
+      background-color: #f2f2f2;
+    }
+
+    .hapus{
+      background-color: #f44;
+      color: white;
+      border: none;
+    }
+
+    #addTaskButton{
+      background-color: skyblue;
+      color: black;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #newTaskInput{
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>My Todo list</h1>
+  <form>
+    <input type="text" id="newTaskInput" placeholder="Masukkan todo">
+    <button id="addTaskButton">Add Task</button>   
+  </form>
+
+  <ul id="taskList">
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
